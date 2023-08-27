@@ -26,9 +26,14 @@ import time
 
 # ... (rest of the code)
 
-while True:
-    check_if_iss_is_close_enough()
-    time.sleep(60) # waits for 60 seconds
+while again:
+    try:
+        check_if_iss_is_close_enough()
+        time.sleep(60) # wait 60 seconds
+    except KeyboardInterrupt:
+        time.sleep(.2)
+        print("\nStopped on KeyboardInterrupt!")
+        again = False
 ```
 
 ## API Calls:
