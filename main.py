@@ -20,7 +20,7 @@ def check_if_iss_is_close_enough():
             connection.starttls()
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email, to_addrs="EMAIL_SENT_TO",
-                                msg=f"Subject: ISS Above! \n\nThe ISS is above you Jake!")
+                                msg=f"Subject: ISS Above! \n\nThe ISS is above you <name>!")
             connection.close()
             print("Sent an email!")
         else:
