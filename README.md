@@ -11,8 +11,6 @@ The program fetches the current position of the ISS from the [Open Notify API](h
 - **API Endpoint:** An API endpoint is used to fetch the live position of the ISS.
 - **Python Time Module:** The python time module is used to loop at appropriate time intervals.
 
-intervals.
-
 - **SMTP Library:** The SMTP Library is used to notify the user when the ISS is close to their location.
 - **PythonAnywhere:** The Python script is executed in the cloud through PythonAnywhere.
 
